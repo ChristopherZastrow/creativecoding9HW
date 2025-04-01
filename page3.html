@@ -1,0 +1,38 @@
+<html>
+    <title>Forms</title>
+    <head>
+        <script>
+            function getData()
+            {
+                var name = document.getElementById("txtName").value;
+                var phone = document.getElementById("txtemail").value;
+
+                document.getElementById("finalResult").innerHTML = "name: " + name + " email: " + phone;
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="txtName"></td>
+            </tr>
+            <tr>
+                <td>email plz</td>
+                <td><input type="text" id="txtemail"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="btnSubmit" onClick="getData();">Submit</button></td>
+            </tr>
+            
+        </table>
+        <div id="finalResult"></div>
+        <br>
+    <a href="index.html">home</a> |
+    <a href="page2.html">do you forget to do big projets and sramble to do them last
+       minute?
+    </a>
+    <a href="page3.html">contact us</a>
+</br>
+    </body>
+ </html>
